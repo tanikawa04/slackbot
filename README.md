@@ -10,7 +10,7 @@ $ npm install tanikawa04/slackbot
 ```
 
 ```js
-const Slackbot = require('./slackbot');
+const Slackbot = require('slackbot');
 
 const slackbot = new Slackbot({
     token: 'xxxxxxxxxx',    // Slack から取得したトークンを記述
