@@ -9,7 +9,7 @@ class Slackbot {
     constructor(config) {
         this._rtm = new RtmClient(
             config.token,
-            config.option || {logLevel: 'debug'}
+            config.option || {}
         );
     }
 
