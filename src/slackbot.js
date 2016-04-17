@@ -17,7 +17,7 @@ class Slackbot {
         this._rtm.start();
     }
 
-    addListener(funcs) {
+    addHandler(funcs) {
         const channels = Object.keys(funcs);
         this._rtm.on(RTM_EVENTS.MESSAGE, (message) => {
             if (channels.indexOf(message.channel) === -1) {

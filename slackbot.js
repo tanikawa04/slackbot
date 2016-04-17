@@ -22,8 +22,8 @@ var Slackbot = function () {
             this._rtm.start();
         }
     }, {
-        key: 'addListener',
-        value: function addListener(funcs) {
+        key: 'addHandler',
+        value: function addHandler(funcs) {
             var channels = Object.keys(funcs);
             this._rtm.on(RTM_EVENTS.MESSAGE, function (message) {
                 if (channels.indexOf(message.channel) === -1) {

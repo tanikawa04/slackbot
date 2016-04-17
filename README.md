@@ -1,7 +1,7 @@
-# Slackbot
+# slackbot
 
 [node-slack-client](https://github.com/slackhq/node-slack-client) のラッパーです。
-細かいことはいいから手っ取り早く Bot を作りたい人向けです。
+細かいことを気にせず、手っ取り早く Bot を作りたい人向けです。
 
 ## Usage
 
@@ -19,13 +19,13 @@ const slackbot = new Slackbot({
     }
 });
 
-// メッセージリスナー登録
-slackbot.addListener({
+// channel にポストされたメッセージに対する処理を登録
+slackbot.addHandler({
     xxxxxx(message) {        // キー（メソッド名）には channel id を記述
-        slackbot.sendMessage('');
+        slackbot.sendMessage('message');
     }
 });
 
-// listen start
+// listen 開始
 slackbot.start();
 ```
