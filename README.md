@@ -13,7 +13,7 @@ $ npm install tanikawa04/slackbot
 const Slackbot = require('slackbot');
 
 const slackbot = new Slackbot({
-    token: 'xxxxxxxxxx',    // Slack から取得したトークンを記述
+    token: 'xoxb-xxxxxxx',  // Slack から取得したトークンを記述
     option: {
         logLevel: 'debug'
     }
@@ -21,8 +21,8 @@ const slackbot = new Slackbot({
 
 // channel にポストされたメッセージに対する処理を登録
 slackbot.addHandler({
-    xxxxxx(message) {        // キー（メソッド名）には channel id を記述
-        slackbot.sendMessage('message');
+    C0XXXXX(message) {      // キー（メソッド名）には channel id を記述
+        slackbot.sendMessage('message', 'C0XXXXX');
     }
 });
 
